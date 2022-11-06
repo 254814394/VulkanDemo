@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="pipelines\empty.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pipelines\cube.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pipelines\triangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\examples\pipelines\pipelines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pipelines\sphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\data\shaders\glsl\triangle\triangle.vert">
+      <Filter>Shaders\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\data\shaders\glsl\triangle\triangle.frag">
+      <Filter>Shaders\GLSL</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(SolutionDir)\data\shaders\glsl\pipelines\phong.frag">
+      <Filter>Shaders\GLSL</Filter>
+    </None>
+    <None Include="$(SolutionDir)\data\shaders\glsl\pipelines\phong.vert">
+      <Filter>Shaders\GLSL</Filter>
+    </None>
+    <None Include="$(SolutionDir)\data\shaders\glsl\pipelines\toon.frag">
+      <Filter>Shaders\GLSL</Filter>
+    </None>
+    <None Include="$(SolutionDir)\data\shaders\glsl\pipelines\toon.vert">
+      <Filter>Shaders\GLSL</Filter>
+    </None>
+    <None Include="$(SolutionDir)\data\shaders\glsl\pipelines\wireframe.frag">
+      <Filter>Shaders\GLSL</Filter>
+    </None>
+    <None Include="$(SolutionDir)\data\shaders\glsl\pipelines\wireframe.vert">
+      <Filter>Shaders\GLSL</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{8F4775F8-CBA0-3880-9394-639D763E9F21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\GLSL">
+      <UniqueIdentifier>{87E7EBE0-CA16-36A6-9FB6-E03ED0987B06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\HLSL">
+      <UniqueIdentifier>{4C47C878-009D-36C7-BA88-09DC14F67BB1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{672A64A2-2F2A-3F18-8D5A-B2CB61BBF956}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="switch.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
