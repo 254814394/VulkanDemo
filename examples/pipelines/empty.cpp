@@ -14,9 +14,9 @@ public:
 		title = "Pipeline state objects";
 		camera.type = Camera::CameraType::lookat;
 		camera.setPosition(glm::vec3(0.0f, 0.0f, -10.5f));
-		camera.setRotation(glm::vec3(-25.0f, 15.0f, 0.0f));
+		camera.setRotation(glm::vec3(0.0f, 0.0f, 0.0f));
 		camera.setRotationSpeed(0.5f);
-		camera.setPerspective(60.0f, (float)(width / 3.0f) / (float)height, 0.1f, 256.0f);
+		camera.setPerspective(60.0f, (float)(width) / (float)height, 0.1f, 256.0f);
 	}
 
 	~VulkanExample()
@@ -92,7 +92,7 @@ public:
 
 	virtual void viewChanged()
 	{
-		camera.setPerspective(60.0f, (float)(width / 3.0f) / (float)height, 0.1f, 256.0f);
+		camera.setPerspective(60.0f, (float)(width) / (float)height, 0.1f, 256.0f);
 	}
 
 	virtual void OnUpdateUIOverlay(vks::UIOverlay* overlay)

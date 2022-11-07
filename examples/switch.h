@@ -13,4 +13,7 @@
 #define SHOW_TRIANGLE_CPP false
 
 // sphere.cpp
-#define SHOW_SPHERE_CPP true
+#define SHOW_SPHERE_CPP false
+
+// texture.cpp
+#define SHOW_TEXTURE_CPP true

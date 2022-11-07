@@ -118,7 +118,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\base\Debug\base.lib;D:\VulkanSDK\1.3.224.1\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\base\Debug\base.lib;$(VK_SDK_PATH)\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -264,6 +264,7 @@
     <ClCompile Include="pipelines\cube.cpp" />
     <ClCompile Include="pipelines\empty.cpp" />
     <ClCompile Include="pipelines\sphere.cpp" />
+    <ClCompile Include="pipelines\texture.cpp" />
     <ClCompile Include="pipelines\triangle.cpp" />
     <CustomBuild Include="..\data\shaders\glsl\triangle\triangle.frag">
       <FileType>Document</FileType>
@@ -291,6 +292,10 @@ $(VULKAN_SDK)\Bin\glslc.exe %(Identity) -o $(OutDir)..\..\data\shaders\glsl\tria
     </None>
     <None Include="$(SolutionDir)\data\shaders\glsl\pipelines\wireframe.vert">
     </None>
+    <None Include="..\mydata\shaders\shpere.frag" />
+    <None Include="..\mydata\shaders\shpere.vert" />
+    <None Include="..\mydata\shaders\texture.frag" />
+    <None Include="..\mydata\shaders\texture.vert" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(SolutionDir)\base\base.vcxproj">
